@@ -8,7 +8,7 @@ class Player:
     def __init__(self, max_x, max_y):
         self.my_board = Board(max_x, max_y)  # Собственная доска
         self.enemy_board = Board(max_x, max_y)  # Доска врага
-        self.shots = self.generate_shots()  # список выстрелов
+        self.shots = self.generate_shots()  # список возможных выстрелов
 
     def generate_shots(self):
         res = []
